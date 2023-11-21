@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int score = 0;
+    int score = 3000;
 
     while (true) {
         std::cout << "Presiona Enter para contar +1 o 'q' para salir: ";
