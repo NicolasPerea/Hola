@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main() {
+    int score = 0;
+
+    while (true) {
+        std::cout << "Presiona Enter para contar +1 o 'q' para salir: ";
+        char input;
+        std::cin.get(input);  
+        if (input == 'q') {
+            std::cout << "Saliendo del juego. Puntuación final: " << score << std::endl;
+            break;  
+        } else if (input == '\n') {
+            score++;
+            std::cout << "Puntuación actual: " << score << std::endl;
+        } else {
+            std::cout << "Entrada no válida. Intenta de nuevo." << std::endl;
+        }
+    }
+
+    return 0;
+}
